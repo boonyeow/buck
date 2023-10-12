@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { Link } from "react-router-dom";
 
 const SignupForm = () => {
   const formik = useFormik({
@@ -122,6 +123,7 @@ const MultipleFileUploadForm = () => {
 const HomePage = () => {
   return (
     <div>
+      <Link to="/supabase">supabase</Link>
       <div>
         <h1>signup form</h1>
         <SignupForm />

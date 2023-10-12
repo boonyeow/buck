@@ -4,11 +4,12 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import SupabasePage from "./pages/SupabasePage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route index element={<HomePage />} />
-      {/* <Route path="upload" element={<UploadPage />} /> */}
+      <Route path="supabase" element={<SupabasePage />} />
     </Route>
   )
 );
